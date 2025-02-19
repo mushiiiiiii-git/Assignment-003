@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <style>
+        .font-sora {
+            font-family: "Sora", sans-serif;
+        }
+
+        .font-adlam-display {
+            font-family: "ADLaM Display", sans-serif;
+        }
+
+        .color-primary {
+            color: #FFDC26 !important;
+        }
+    </style>
+</head>
+
+
+<body class="font-sora">
+    <header>
+        <!-- Nav-Bar -->
+        <nav
+            class="flex justify-between px-4 py-3 lg:px-[140px] md:px-[70px] md:py-7 bg-[#FFF9F4] border border-black md:border-none">
+            <div class="flex items-center gap-3 cursor-not-allowed">
+                <img src="assets-catagory-1/logo-header.png" alt="">
+                <h1 class="hidden md:flex text-2xl text-text1">Browse<span class="color-primary">4</span>Pets</h1>
+            </div>
+            <div class="hidden md:flex gap-8 cursor-pointer">
+                <div class="text-2xl">Find a pet</div>
+                <div class="text-2xl">Breeds</div>
+                <div class="text-2xl">Contact us</div>
+            </div>
+            <div class="hidden md:flex items-center gap-3 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+                <button class="btn btn-outline btn-warning">Login</button>
+                <button class="btn btn-warning">Register</button>
+            </div>
+            <div class="flex items-center md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <section>
+            <div class="px-4 md:px-32 lg:px-40 my-8 md:my-24 relative ">
+                <div class="z-50 relative">
+                    <h1 class="font-adlam-display text-3xl md:text-5xl text-[#111111] mb-4">Pamper Your Pet,<br>Because They Deserve<br>the Bes</h1>
+                    <p class="text-base md:text-xl text-[#111111] mb-6">Discover a world of treats, toys, and essentials handpicked for<br>your furry friends. Shop now and make tails wag with joy!</p>
+                    <button class="btn btn-warning">Find a pet</button>
+                </div>
+                <div class="z-0 absolute right-0 top-44 md:right-32 md:top-10">
+                    <img src="assets-catagory-1/cat-big.png" alt="Cat">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
