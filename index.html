@@ -36,6 +36,25 @@
         .footer-bg {
             background-color: rgba(255, 220, 38, 0.5);
         }
+        .btn-animation {
+            animation: jump 1s infinite;
+        }
+
+        @keyframes jump {
+
+            from,
+            33%,
+            66%,
+            to {
+                transform: rotate(4deg)
+            }
+
+            16%,
+            50%,
+            83% {
+                transform: rotate(-4deg)
+            }
+        }
     </style>
 </head>
 
@@ -85,7 +104,7 @@
                     <p class="text-base md:text-xl text-[#111111] mb-6 mr-4">Discover a world of treats, toys, and
                         essentials
                         handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                    <button class="btn btn-warning">Find a pet</button>
+                    <button class="btn btn-warning btn-animation">Find a pet</button>
                 </div>
                 <div class="z-0 absolute mt-44 md:mt-0 md:ml-96">
                     <img class="size-auto" src="assets-catagory-1/cat-big.png" alt="Cat">
