@@ -32,11 +32,15 @@
         .color-primary {
             color: #FFDC26 !important;
         }
+
+        .footer-bg {
+            background-color: rgba(255, 220, 38, 0.5);
+        }
     </style>
 </head>
 
 
-<body class="font-sora">
+<body class="font-sora relative">
     <header>
         <!-- Nav-Bar -->
         <nav
@@ -89,7 +93,7 @@
             </div>
         </section>
     </header>
-    <main class="mt-[120%] md:mt-[50%] md:max-w-[80vw] mx-auto">
+    <main class="mt-[120%] md:mt-[50%] md:max-w-[80vw] mx-auto relative">
         <!-- Category Section -->
         <section class="px-4 md:px-[70] lg:px-[140] mb-[55px] md:mb-[125px]">
             <h1 class="text-[#111111] font-adlam-display text-4xl mb-12">Browse By Category</h1>
@@ -368,22 +372,28 @@
             </div>
         </section>
         <!-- Everyday Low Price Section -->
-        <section class="py-[140px]">
+        <section class="py-[140px] mb-[390px]">
             <h1 class="ml-4 md:ml-0 mb-12 text-2xl md:text-5xl font-adlam-display">Everyday Low Price</h1>
-            <div class="mx-auto w-[90%] md:w-full flex flex-col md:flex-row justify-center md:gap-x-14 gap-y-8 md:gap-y-0">
+            <div
+                class="mx-auto w-[90%] md:w-full flex flex-col md:flex-row justify-center md:gap-x-14 gap-y-8 md:gap-y-0">
                 <!-- Card-1 -->
-                <div class="flex md:flex-row-reverse bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] rounded-2xl md:items-center relative">
-                    <img class="absolute md:static right-1 bottom-1 md:right-auto md:bottom-auto w-[220px] md:w-auto" src="assets-catagory-1/cute-dog-mid.png" alt="">
+                <div
+                    class="flex md:flex-row-reverse bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] rounded-2xl md:items-center relative">
+                    <img class="absolute md:static right-1 bottom-1 md:right-auto md:bottom-auto w-[220px] md:w-auto"
+                        src="assets-catagory-1/cute-dog-mid.png" alt="">
                     <div class="pl-12 md:pl-[80px] pt-[40px] pb-[240px] md:py-[140px]">
                         <h4 class="text-xl mb-4 hidden md:block">Under Price</h4>
                         <h2 class="text-xl md:text-3xl font-adlam-display mb-2">Pet Grooming Mitt</h2>
-                        <h3 class="text-white text-2xl font-adlam-display mb-4 hidden md:block"> (Easy Hair Removal) </h3>
+                        <h3 class="text-white text-2xl font-adlam-display mb-4 hidden md:block"> (Easy Hair Removal)
+                        </h3>
                         <h1 class="font-adlam-display text-4xl md:text-6xl text-white md:text-black">$7.99</h1>
                     </div>
                 </div>
                 <!-- Card-2 -->
-                <div class="flex bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-2xl md:items-center relative w-[100%] md:w-[515px]">
-                    <img class="absolute right-1 bottom-1 w-[220px] md:w-auto" src="assets-catagory-1/cute-pet-mid.png" alt="">
+                <div
+                    class="flex bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-2xl md:items-center relative w-[100%] md:w-[515px]">
+                    <img class="absolute right-1 bottom-1 w-[220px] md:w-auto" src="assets-catagory-1/cute-pet-mid.png"
+                        alt="">
                     <div class="pl-12 pt-[40px] pb-[240px]">
                         <h2 class="text-xl md:text-3xl font-adlam-display mb-2">T-Shirt for Dogs</h2>
                         <h1 class="font-adlam-display text-4xl md:text-6xl text-[#FFDC26]">$7.99</h1>
@@ -392,8 +402,45 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <!-- News Letter Section -->
+    <div
+        class="absolute left-0 right-0 mx-auto h-[700px] bottom-[850px] md:bottom-[500px] w-[90%] md:w-[80%] bg-white flex flex-col md:flex-row gap-x-[120px] gap-y-[40px] items-center rounded-2xl">
+        <div>
+            <img class="w-[250px] md:w-[400px] md:ml-[90px]" src="assets-catagory-1/cute-pet-mid.png" alt="">
+        </div>
+        <div class="flex flex-col md:ml-[120px] text-center md:text-start">
+            <h1 class="font-adlam-display text-2xl md:text-4xl mb-3 md:mb-5">Get Pawsome News!</h1>
+            <p class="text-lg md:text-xl mb-5 md:mb-14">Exclusive training tips, ticks, product deals and more.</p>
+            <input type="email" name="email"
+                class="bg-none border-none placeholder:text-[#C4C4C4] focus:outline-gray-200 rounded-3xl p-8 w-[300px] md:w-[470px] mb-3 md:mb-10"
+                placeholder="Enter email...">
+            <button
+                class="btn btn-warning text-xl left-0 right-0 mx-auto md:ml-0 max-w-[120px] md:max-w-[170px]">Subscribe</button>
+        </div>
+    </div>
+    <footer
+        class="footer-bg pt-[530px] pb-[140px] px-4 md:px-[155px] flex flex-col md:flex-row justify-start md:justify-between md:items-center gap-y-20">
+        <div class="max-w-[420px] flex flex-col gap-6">
+            <div class="flex items-center gap-3 cursor-not-allowed">
+                <img src="assets-catagory-1/logo-footer.png" alt="">
+                <h1 class="flex text-2xl text-text1">Browse<span class="color-primary">4</span>Pets</h1>
+            </div>
+            <p class="text-xl">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+        </div>
+        <div class="flex flex-col justify-start gap-8 cursor-pointer">
+            <div class="text-2xl">Find a pet</div>
+            <div class="text-2xl">Breeds</div>
+            <div class="text-2xl">Contact us</div>
+        </div>
+        <div class="left-4">
+            <h3 class="text-2xl mb-4">Follow Us</h3>
+            <div class="flex gap-6">
+                <img class="w-6 md:w-8 cursor-grab" src="icons/facebook.png" alt="">
+                <img class="w-6 md:w-8 cursor-grab" src="icons/instagram.png" alt="">
+                <img class="w-6 md:w-8 cursor-grab" src="icons/linkedin.png" alt="">
+                <img class="w-6 md:w-8 cursor-grab" src="icons/youtube.png" alt="">
+            </div>
+        </div>
     </footer>
 </body>
 
